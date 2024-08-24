@@ -14,12 +14,11 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      "https://ecom-chart-dashboard.vercel.app/",
+      "https://ecom-chart-dashboard.vercel.app", 
       "https://ecom-chart-dashboard-1.onrender.com",
       "http://localhost:5173",
-      "*",
     ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE"], 
     credentials: true,
   })
 );

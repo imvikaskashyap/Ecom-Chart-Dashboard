@@ -10,18 +10,13 @@ import HomePage from "./pages/HomePage";
 function App() {
   return (
     <div className="flex h-screen bg-gray-900 text-gray-100 overflow-hidden relative">
-      {/* Background Layer */}
       <div className="absolute inset-0 z-0">
-        {/* Background Gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 opacity-80" />
-        {/* Backdrop Blur applied only to the gradient background */}
         <div className="absolute inset-0 backdrop-blur-sm" />
       </div>
 
-      {/* Sidebar (z-index increased to overlay on top of background) */}
       <Sidebar />
 
-      {/* Content Wrapper */}
       <div className="relative z-10 flex-1 overflow-y-auto">
         <Routes>
           <Route path="/" element={<HomePage />} />

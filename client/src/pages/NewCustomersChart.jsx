@@ -26,7 +26,7 @@ const NewCustomersChart = () => {
         const response = await axios.get(
           `${BACKEND_URL}/customer/${selectedTimeRange}`
         );
-        console.log(response);
+        // console.log(response);
         setCustomerData(
           response.data.map((item) => ({
             time: item._id,

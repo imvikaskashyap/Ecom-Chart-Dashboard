@@ -2,6 +2,7 @@ import {
   BadgeIndianRupee,
   ChartNoAxesCombined,
   Compass,
+  House,
   Menu,
   Repeat,
   UserRoundPlus,
@@ -11,7 +12,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const SIDEBAR_ITEMS = [
-  { name: "Sales", icon: BadgeIndianRupee, color: "#8B5CF6", href: "/" },
+  { name: "Home", icon: House, color: "#8B5CF6", href: "/" },
+  { name: "Sales", icon: BadgeIndianRupee, color: "#8B5CF6", href: "/sales" },
   {
     name: "Growth Rate",
     icon: ChartNoAxesCombined,
